@@ -1,0 +1,518 @@
+/* Cabezal */
+
+header h1 {
+    margin: 0px;
+    padding: 10px;
+    font-size: 250%;
+    text-align: left;
+  }
+  
+  /* Menu */
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8; 
+    padding: 10px;
+  }
+  
+  nav ul.menuh {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul.menuh li {
+    margin-right: 20px; 
+  }
+  
+  nav ul.menuh li a {
+    text-decoration: none;
+    color: #000;
+    padding: 8px 16px;
+  }
+  
+  form.d-flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  form.d-flex input.form-control {
+    margin-right: 10px;
+  }
+  
+  form.d-flex button {
+    padding: 8px 16px;
+  }
+  
+  .menuh {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+  }
+  
+  .menuh li {
+    float: left;
+  }
+  
+  .menuh li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+  }
+  
+  .menuh li:last-child {
+    border-right: none;
+  }
+  
+  /* Article */
+  
+  article {
+    clear: both;
+  }
+  
+  article img {
+    width: 250px;
+    float: left;
+    height: 250px;
+    margin-right: 10px;
+  }
+  
+  /* responsive */
+  
+  .wrapper {
+    max-width: 1024;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1 fr);
+    grid-gap: 2px;
+  }
+  
+  .wrapper > * {
+    border: 2px solid rgb(187, 201, 238);
+    background-color: rgb(248, 242, 227);
+    padding: 10px;
+    grid-column: col-start / span 12;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    flex-wrap: nowrap;
+  }
+  
+  @media (min-width: 500px) {
+    .content {
+      grid-column: col-start / span 9;
+    }
+    .aside {
+      grid-column: col-start 10 / span 3;
+    }
+    .nav ul {
+      display: flex;
+    }
+    nav ul li {
+      margin-right: 10px;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .nav {
+      grid-column: col-start / span 2;
+    }
+    .content {
+      grid-column: col-start 3s / span 8;
+    }
+    .aside {
+      grid-column: col-start 11 / span 2;
+    }
+    .nav ul {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .formL {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .inputGS {
+      flex: 1 1 100%;
+      max-width: 500px;
+    }
+  }
+  
+  /* noticias */
+  
+  .tituloT {
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    clear: both;
+    color: white;
+    background-color: rgb(90, 81, 81);
+    margin: 0px;
+    padding: 5px;
+    font-family: Arial;
+  }
+  
+  .tituloF {
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    list-style-type: none;
+    clear: both;
+    color: rgb(65, 64, 64);
+    background-color: rgb(230, 211, 211);
+    margin: 0px;
+    padding: 10px;
+    font-family: Arial;
+  }
+  
+  .titulos {
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    list-style-type: none;
+    clear: both;
+    color: rgb(65, 64, 64);
+    margin: 0px;
+    padding: 10px;
+    font-family: Arial;
+  }
+  
+  .pa {
+    font-size: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    list-style-type: none;
+    clear: both;
+    color: rgb(65, 64, 64);
+    margin: 0px;
+    padding: 10px;
+    font-family: Arial;
+  }
+  
+  /* Noticias imagenes horizontales */
+  
+  .photo-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  .photo-item {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .photo-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .photo-item h3 {
+    font-size: 1.5em;
+    margin: 15px 0 10px 0;
+    color: #333;
+  }
+  
+  .photo-item p {
+    font-size: 1em;
+    margin: 0 15px 15px 15px;
+    color: #666;
+  }
+  
+  .photo-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .button {
+    display: block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgb(43, 43, 43);
+    background-color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: auto;
+  }
+  
+  .button:hover {
+    background-color: #7499c0;
+  }
+  
+  .noticias {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .noticias h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .noticiasLinks {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .noticiasColumnas {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  details {
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  summary {
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  ul li a:hover {
+    color: #0056b3;
+  }
+  
+  /* Login */ 
+  
+  .loginSec {
+    text-align: center;
+    padding: 40px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    max-width: 1600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loginSec h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .inputG {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .inputG label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+  
+  .inputG input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .buttonG {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttonG button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .buttonG button:hover {
+    background-color: #74b0f0;
+  }
+  
+  /* Estilos para la sección de Sign Up */
+  .signupSec {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signupSec h2 {
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    color: #333;
+  }
+  
+  .formL {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .inputGS {
+    flex: 1 1 45%;
+    margin: 10px;
+    text-align: left;
+  }
+  
+  .inputGS label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .inputGS input,
+  .inputGS select {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .radioGS,
+  .checkboxGS {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+  }
+  
+  .radioGS label,
+  .checkboxGS label {
+    font-size: 0.95em;
+    color: #555;
+  }
+  
+  .buttonGS {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .buttonGS button {
+    padding: 10px 25px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #28a745; /* Verde para Registrar */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttonGS button:hover {
+    background-color: #218838;
+  }
+  
+  .buttonGS button:nth-child(2) {
+    background-color: #dc3545; /* Rojo para Cancelar */
+  }
+  
+  .buttonGS button:nth-child(2):hover {
+    background-color: #c82333;
+  }
+  
+/* Parcial */
+
+
+/* Layout para sedes y mapa */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Menú desplegable para las sedes */
+.offices {
+    width: 30%;
+}
+
+.office-menu {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+}
+
+.office-details {
+    display: none;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilos para el mapa */
+.map-container {
+    width: 65%;
+    text-align: center;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+}
